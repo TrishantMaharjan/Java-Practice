@@ -1,0 +1,12 @@
+package ControlStatements;
+
+public class DoWhileTest {
+	public static void main(String[] args) {
+		/*
+		 * syntax:
+		 * do {
+		 * 
+		 * } while(condition);
+		 */
+	}
+}

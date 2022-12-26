@@ -1,0 +1,13 @@
+package ControlStatements;
+
+public class EnhancedForTest {
+	/*
+	 * Syntax:
+	 * for(data_type variable : collection) {
+	 * 		//statements
+	 * }
+	 */
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,17 @@
+package ControlStatements;
+
+public class ForTest {
+	/*
+	 * ========== for ==========
+	 * syntax:
+	 * for(initialization; condition; inc/dec) {
+	 * 		//statements
+	 * }
+	 */
+	public static void main(String[] args) {
+		int i;
+		for (i = 1; i <=30 ;i++) {
+			System.out.println("FIFA World Cup 2022");
+		}
+	}
+}

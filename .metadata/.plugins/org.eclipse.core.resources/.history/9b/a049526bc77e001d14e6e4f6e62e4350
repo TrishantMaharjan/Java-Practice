@@ -1,0 +1,11 @@
+package ControlStatements;
+
+public class WhileTest {
+	/*
+	 * syntax:
+	 * while(condition) {
+	 * 		//statements
+	 * 		//inc/dec
+	 * }
+	 */
+}

@@ -1,0 +1,11 @@
+package ControlStatements;
+
+public class JumpingTest {
+	public static void main(String[] args) {
+		/*
+		 * 1) break;
+		 * 2) continue;
+		 * 3) return;
+		 */
+	}
+}
