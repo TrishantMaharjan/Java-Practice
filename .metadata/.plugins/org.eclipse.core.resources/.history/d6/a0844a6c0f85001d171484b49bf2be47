@@ -24,17 +24,6 @@ public class OOPDocs {
 		 *			//properties/features
 		 *			//methods/functions/behaviors/responsibilities
 		 * 		} 
-		 * 
-		 * # Objects:
-		 * 		- Implementation of class.
-		 * 		- Instance of class.
-		 * 		- Object holds memory when it is created.
-		 * 		- Object contains instance variables and instance methods.
-		 * 	
-		 * Syntax:
-		 * 		class_name object_name = new class_name();
-		 * 						OR
-		 * 		new class_name();
 		 */
 	}
 }
