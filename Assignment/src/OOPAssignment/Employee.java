@@ -30,15 +30,16 @@ public class Employee {
 	}
 	
 	public static void main(String[] args) {
-		Employee E1 = new Employee();
-		Employee E2 = new Employee();
-		Employee E3 = new Employee();
-		E1.dataEntry();
-		E2.dataEntry();
-		E3.dataEntry();
-		System.out.println("Name Year of joining Address");
-		E1.display();
-		E2.display();
-		E3.display();
+		Employee E[] = new Employee[3];
+		for (int i = 0; i <= 2; i++) {
+			E[i] = new Employee();
+		}
+		for (int i = 0; i <= 2; i++) {
+			E[i].dataEntry();
+		}
+		System.out.println("Name   Year of joining Address");
+		for (int i = 0; i <= 2; i++) {
+			E[i].display();
+		}
 	}
 }
