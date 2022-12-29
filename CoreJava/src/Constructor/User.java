@@ -10,6 +10,7 @@ public class User {
 		username = "Admin";
 		password = "Admin";
 	}
+	// Best practice, make a default constructor when making a parameterized constructor.
 	
 	// Parameterized construction
 	/*
