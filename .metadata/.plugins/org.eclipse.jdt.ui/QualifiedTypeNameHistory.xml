@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.lang.StrictMath"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="Constructor.Rectangle"/>
@@ -15,7 +14,10 @@
     <fullyQualifiedTypeName name="org.w3c.dom.css.Counter"/>
     <fullyQualifiedTypeName name="OOP.CounterWithoutStatic"/>
     <fullyQualifiedTypeName name="InheritanceEncapsulationPractice.Employee"/>
+    <fullyQualifiedTypeName name="InheritanceEncapsulationPractice.Manager"/>
+    <fullyQualifiedTypeName name="ObjestWithArray.Book"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="ObjectWithMethod.Student"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="InheritanceEncapsulationPractice.Manager"/>
 </qualifiedTypeNameHistroy>
