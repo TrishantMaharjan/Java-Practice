@@ -20,4 +20,11 @@
     <fullyQualifiedTypeName name="ObjectWithMethod.Student"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="MethodOverriding.NMBBank"/>
+    <fullyQualifiedTypeName name="MethodOverriding.NICBank"/>
+    <fullyQualifiedTypeName name="MethodOverriding.CentralBank"/>
+    <fullyQualifiedTypeName name="MethodOverriding.SCBank"/>
+    <fullyQualifiedTypeName name="Abstraction.UserServiceImpl"/>
+    <fullyQualifiedTypeName name="Abstraction.CommonService"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
 </qualifiedTypeNameHistroy>
