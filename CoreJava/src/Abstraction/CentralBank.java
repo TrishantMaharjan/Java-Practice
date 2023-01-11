@@ -11,7 +11,7 @@ public abstract class CentralBank {
 	}
 	*/
 	
-	protected abstract void bankName(); // Abstract class must be overridden by child class
+	protected abstract void bankName(); // Abstract method must be overridden by child class
 	
 	protected abstract void interestRate();
 	
