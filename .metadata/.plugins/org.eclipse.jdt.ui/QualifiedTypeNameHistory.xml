@@ -16,7 +16,6 @@
     <fullyQualifiedTypeName name="InheritanceEncapsulationPractice.Employee"/>
     <fullyQualifiedTypeName name="InheritanceEncapsulationPractice.Manager"/>
     <fullyQualifiedTypeName name="ObjestWithArray.Book"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="ObjectWithMethod.Student"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
@@ -27,4 +26,14 @@
     <fullyQualifiedTypeName name="Abstraction.UserServiceImpl"/>
     <fullyQualifiedTypeName name="Abstraction.CommonService"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.security.cert.CollectionCertStoreParameters"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
 </qualifiedTypeNameHistroy>
