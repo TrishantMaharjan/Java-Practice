@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import com.model.Product;
 
@@ -39,6 +40,18 @@ public class ProductServiceImpl implements ProductService {
 		}
 		plist.remove(index-1); // Not needed
 		System.out.println("Product number "+(index)+" removed successfully");
+	}
+	
+	public void updateProduct(Product p) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "root", "");
+			String sql = "update product set Name = '"+p.getName()+"', Company = '"+p.getCompany()+"', Category = '"+p.getCategory()+"', Price = '"+p.getPrice()+"', Qty = '"+p.getQty()+"' where ID = '"+p.getId()+"'";
+			Statement stm = con.createStatement();
+			stm.execute(sql);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public List<Product> getAllProducts() {
