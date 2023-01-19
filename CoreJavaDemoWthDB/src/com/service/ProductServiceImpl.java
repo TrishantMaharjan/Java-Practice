@@ -4,15 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 import com.model.Product;
 
 public class ProductServiceImpl implements ProductService {
-	
-	static List<Product> plist = new ArrayList<>();
 
 	public void addProduct(Product p) {
 		try {
@@ -24,8 +19,7 @@ public class ProductServiceImpl implements ProductService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		plist.add(p); // Not needed
-		System.out.println("Product addition success. Size = "+plist.size());
+		System.out.println("Product addition success.");
 	}
 
 	public void deleteProduct(int index) {
@@ -38,7 +32,6 @@ public class ProductServiceImpl implements ProductService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		plist.remove(index-1); // Not needed
 		System.out.println("Product number "+(index)+" removed successfully");
 	}
 	
@@ -54,7 +47,7 @@ public class ProductServiceImpl implements ProductService {
 		}
 	}
 
-	public List<Product> getAllProducts() {
+	public void getAllProducts() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "root", "");
@@ -69,12 +62,11 @@ public class ProductServiceImpl implements ProductService {
 				System.out.println("Category = "+rs.getString("Category"));
 				System.out.println("Price = "+rs.getInt("Price"));
 				System.out.println("Quantity = "+rs.getInt("Qty"));
-				System.out.println("==========");
+				System.out.println("==================");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return plist;
 	}
 
 }

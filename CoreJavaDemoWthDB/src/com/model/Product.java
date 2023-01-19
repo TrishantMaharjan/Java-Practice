@@ -45,10 +45,4 @@ public class Product {
 	public void setQty(int qty) {
 		this.qty = qty;
 	}
-	
-	@Override
-	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", company=" + company + ", category=" + category + ", price="
-				+ price + ", qty=" + qty + "]";
-	}
 }

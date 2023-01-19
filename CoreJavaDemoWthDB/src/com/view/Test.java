@@ -1,8 +1,6 @@
 package com.view;
 
-import java.util.List;
 import java.util.Scanner;
-
 import com.model.Product;
 import com.service.ProductService;
 import com.service.ProductServiceImpl;
@@ -100,7 +98,7 @@ public class Test {
 	
 	void getAll() {
 		ProductService ps = new ProductServiceImpl();
-		List<Product> products = ps.getAllProducts();
+		ps.getAllProducts();
 	}
 	
 	void delete() {

@@ -1,7 +1,5 @@
 package com.service;
 
-import java.util.List;
-
 import com.model.Product;
 
 public interface ProductService {
@@ -12,5 +10,5 @@ public interface ProductService {
 	
 	void updateProduct(Product p);
 	
-	List<Product> getAllProducts();
+	void getAllProducts();
 }
