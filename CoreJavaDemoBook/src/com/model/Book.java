@@ -2,15 +2,11 @@ package com.model;
 
 public class Book {
 	
-	int id;
 	String name;
 	String author;
 	String publisher;
 	int edition;
 	
-	public int getId() {
-		return id;
-	}
 	public String getName() {
 		return name;
 	}
