@@ -1,5 +1,7 @@
 package com.companyname.springprojectdemo.model;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +19,7 @@ public class User {
 	private String lname;
 	private String username;
 	private String password;
+	private String concent = "";
 	
 	public int getId() {
 		return id;
@@ -47,6 +50,12 @@ public class User {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getConcent() {
+		return concent;
+	}
+	public void setConcent(String concent){
+		this.concent = concent;
 	}
 	
 }

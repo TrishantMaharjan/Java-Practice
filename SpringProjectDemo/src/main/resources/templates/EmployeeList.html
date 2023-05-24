@@ -5,6 +5,8 @@
 <title>Employee list</title>
 </head>
 <body>
+	<div th:insert="Header.html">
+	</div>
 	<h1>Employee List</h1>
 	<hr>
 	<table>
@@ -15,6 +17,7 @@
 				<td>Post</td>
 				<td>Phone</td>
 				<td>Country</td>
+				<td>City</td>
 				<td>State</td>
 				<td>Action</td>
 			</tr>
@@ -27,9 +30,10 @@
 				<td>[[${employee.phone}]]</td>
 				<td>[[${employee.address.country}]]</td>
 				<td>[[${employee.address.city}]]</td>
+				<td>[[${employee.address.state}]]</td>
 				<td>
-					<input type="submit" value="Edit">
-					<input type="submit" value="Delete">
+					<a th:href = "@{/edit(id=${employee.id})}"><input type="submit" value="Edit"></a>
+					<a th:href = "@{/delete(id=${employee.id})}"><input type="submit" value="Delete"></a>
 				</td>
 			</tr>
 		</tbody>
