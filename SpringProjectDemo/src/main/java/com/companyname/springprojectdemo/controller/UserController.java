@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.companyname.springprojectdemo.model.Employee;
 import com.companyname.springprojectdemo.model.User;
 import com.companyname.springprojectdemo.service.UserService;
 

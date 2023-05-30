@@ -7,9 +7,10 @@
 <body>
 	<div th:insert="Header.html">
 	</div>
-	<h1>Employee List</h1>
+	<h1 align = "center">Employee List</h1>
 	<hr>
-	<table>
+	<div class = "container-fluid">
+		<table id = "employeeTable">
 		<thead>
 			<tr>
 				<td>Name</td>
@@ -38,5 +39,11 @@
 			</tr>
 		</tbody>
 	</table>
+	</div>
+	<script type = "text/javascript">
+		$(document).ready( function () {
+	    	$('#employeeTable').DataTable();
+		} );
+	</script>
 </body>
 </html>

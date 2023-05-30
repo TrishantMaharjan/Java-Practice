@@ -24,5 +24,11 @@ public class UserServiceImpl implements UserService {
 		return userRepo.findByUsernameAndPassword(un, psw);
 		
 	}
+
+	@Override
+	public void updateUser(User user) {
+		userRepo.save(user);
+		
+	}
 	
 }

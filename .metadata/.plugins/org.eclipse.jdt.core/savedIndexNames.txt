@@ -20,7 +20,6 @@ INDEX VERSION 1.131+/home/trishant/Documents/workspace-spring-tool-suite-4-4.17.
 4173107338.index
 1547564904.index
 2261781241.index
-1782317696.index
 1857333945.index
 4016197095.index
 1266989130.index
