@@ -1,5 +1,7 @@
 package com.companyname.springprojectdemo.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,18 +22,27 @@ public class EmployeeController {
 	private EmployeeService service;
 	
 	@GetMapping("/employee")
-	public String getEmployeeForm() {
+	public String getEmployeeForm(HttpSession session) {
+		if (session.getAttribute("activeuser")==null) {
+			return "LoginForm";
+		}
 		return "EmployeeForm";
 	}
 	
 	@PostMapping("/employee")
-	public String saveEmployee(@ModelAttribute Employee employee) {
+	public String saveEmployee(@ModelAttribute Employee employee, HttpSession session) {
+		if (session.getAttribute("activeuser")==null) {
+			return "LoginForm";
+		}
 		service.addEmp(employee);
 		return "EmployeeForm";
 	}
 	
 	@GetMapping("/list")
-	public String getAll(Model model) {
+	public String getAll(Model model, HttpSession session) {
+		if (session.getAttribute("activeuser")==null) {
+			return "LoginForm";
+		}
 		model.addAttribute("elist",service.getAllEmps());
 		return "EmployeeList";
 	}

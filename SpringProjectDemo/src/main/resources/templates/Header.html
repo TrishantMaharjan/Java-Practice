@@ -17,7 +17,7 @@
     		<div class="collapse navbar-collapse" id="mynavbar">
       			<ul class="navbar-nav me-auto">
         			<li class="nav-item">
-        				<a class="nav-link" href="">Welcome : [[${uname}]]</a>
+        				<a class="nav-link" href="/home" th:if = "${session.activeuser} != NULL">Welcome : [[${session.activeuser.fname}]]</a>
         			</li>
         			<li class="nav-item">
           				<a class="nav-link" href="/employee">Add Employee</a>
@@ -32,7 +32,7 @@
           				<a class="nav-link" href="/upload">Upload</a>
         			</li>
         			<li class="nav-item">
-          				<a class="nav-link" href="/contact">Contact Us</a>
+          				<a class="nav-link" href="/contact">Send Email</a>
         			</li>
       			</ul>
       			<form class="d-flex">

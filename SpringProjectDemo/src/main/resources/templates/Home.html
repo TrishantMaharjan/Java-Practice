@@ -7,5 +7,11 @@
 <body>
 	<div th:insert="Header.html">
 	</div>
+	<br>
+	<div class = "container-fluid text-center">
+		<p>First Name: [[${session.activeuser.fname}]]</p>
+		<p>Last Name: [[${session.activeuser.lname}]]</p>
+		<p>User Name: [[${session.activeuser.username}]]</p>
+	</div>
 </body>
 </html>
