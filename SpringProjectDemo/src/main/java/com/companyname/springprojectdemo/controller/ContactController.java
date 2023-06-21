@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ContactController {
 
 	@Autowired
-    private JavaMailSender javaMailSender;
+    	private JavaMailSender javaMailSender;
 	
 	@GetMapping("/contact")
 	public String getContact(HttpSession session) {
